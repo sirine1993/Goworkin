@@ -8,5 +8,5 @@ Exploiter l'opendata pour constituer
 - Créer une application qui exploite l'OPENDATA. L'appli consiste à lister les espaces de co-working et/ou avec free wifi autour de soi.
 
 
-# GROUPE
+# Groupe
 Nenad - Florian - Sebastian - Sirine
