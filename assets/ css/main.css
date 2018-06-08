@@ -1,0 +1,20 @@
+
+/**************** Mobile **********************/
+@media screen and (max-width: 640px) {
+    body {
+      background-color: #cfcfcf;
+      margin: 0; 
+    }
+  
+ 
+}
+
+/************* Tablet *******************/
+@media screen and (min-width: 640px) and (max-width:1200px){
+}
+
+
+
+/****************PC*********************/
+@media screen and (min-width: 1200px) {
+}

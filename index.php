@@ -1,4 +1,5 @@
 <?php
+
 $action = ( isset( $_GET['action']) )? $_GET['action'] : "home";
 
 switch ($action){
