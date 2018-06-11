@@ -8,3 +8,8 @@ RewriteEngine On
 
 RewriteRule ^home/$ index.php [L,QSA]
 
+Rewritecond %{HTTP_HOST} ^goworkin.com$
+Rewritecond %{HTTP_HOST} ^goworking.com$
+
+RewriteRule ^(.*) http://www.goworkin.com/$1 [QSA,L,R=301]
+
