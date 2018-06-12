@@ -1,8 +1,3 @@
 <?php
 
-// require_once("utils/db.php");
-
-
-//Fonction SQL
-
-
+// require_once('../utils/db.php');
