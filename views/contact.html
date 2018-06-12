@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+{% block content %} 
+<div id="app">
+        
+    <form class="vue-form" @submit.prevent="submit">
+  
+
+
+        
+        <div>
+            <h1 class="center">Contact</h1>
+          <input type="text" name="name" id="name" required="" v-model="name" placeholder="Nom et prenom">
+        </div>
+        <div>
+         
+          <input type="email" name="email" id="email" required=""
+                 :class="{ email , error: !email.valid }"
+                 v-model="email.value" placeholder="Email">
+        </div>
+
+        <div>
+          
+          <textarea class="message" name="textarea" id="textarea" required="" 
+                    v-model="message.text" 
+                    :maxlength="message.maxlength" placeholder="Votre message"></textarea>
+         </div>
+       
+        <div>
+          <input type="submit" value="Envoyer">
+        </div>
+    
+    </form>
+  
+   
+  
+  </div> 
+
+{% endblock %}
