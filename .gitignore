@@ -1,5 +1,4 @@
 /vendor/
 /utils/
 /bdd/
-/tests/
-/test_geo/
+/tests/test_geo/
