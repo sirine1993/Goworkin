@@ -1,7 +1,7 @@
 <?php
 echo 'coucou coworking';
 
-require_once '../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 require_once ('models/request.php');
 
 $loader = new Twig_Loader_Filesystem('views');
