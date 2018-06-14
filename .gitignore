@@ -1,4 +1,4 @@
 /vendor/
-/utils/
 utils/
+utils/db.php
 /tests/test_geo/
