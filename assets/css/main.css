@@ -1,4 +1,3 @@
-
 /*  <img src="assets/medias/Image/group-2606784_1920.jpg">*/
 p,h1,h2,h3{
   color: #2D4E43;
@@ -20,8 +19,7 @@ p,h1,h2,h3{
     background-color: #2D4E43;
      text-align: center; 
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
   
   }
   .logo{
@@ -57,22 +55,23 @@ p,h1,h2,h3{
       margin: 0; 
     }
     .footer{
+      padding: 0;
+      margin: 0;
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       right: 0;
       bottom: 0;
       left: 0;
-      padding: 1rem;
-      justify-content: space-around;
+      padding: 1rem;    
       text-align: center; 
       background-color: #718878;    
-     flex-direction: column-reverse;  
-    }
-  
-   .imgsFooter{
-     display: flex;
-    width: 90px;
-    color: white;
-    
+    }   
+      .imgsFooter{    
+     
+    width: 80px;
+    color: white;    
    }
    /*About us page*/
    .aboutUs
@@ -84,10 +83,18 @@ p,h1,h2,h3{
    }
    .soclCont
    {
-     justify-content: center;
-     position: absolute;
-     padding-left: 25%;
-    margin-top: 70%;
+    position: absolute;
+    padding-bottom: 20%;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    left: 0;   
+    text-align: center;      
+   flex-direction: row;
+    
    }
 .socialImgs{   
   margin: 0px;
@@ -172,23 +179,24 @@ display: block;
       margin: 0; 
     }
     .footer{
+      padding: 0;
+      margin: 0;
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       right: 0;
       bottom: 0;
       left: 0;
-      padding: 1rem;
-      justify-content: space-around;
+      padding: 1rem;    
       text-align: center; 
-      background-color: #718878;    
-     flex-direction: column-reverse;  
-    }
-  
-   .imgsFooter{
-     display: flex;
-    width: 100px;
-    color: white;
-    
-    
+      background-color: #718878;
+      height: 150px;    
+    }   
+      .imgsFooter{    
+     
+    width: 120px;
+    color: white;    
    }
    /*About us page*/
    .aboutUs
@@ -198,12 +206,29 @@ display: block;
      text-align: center;
      color: #2D4E43;
    }
-   .socialImgs{     
-     flex-direction: row;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 60px;
+   .soclCont
+   {
+    position: absolute;
+    padding-bottom: 20%;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    left: 0;   
+    text-align: center;      
+   
+    
+   }
+.socialImgs{   
+  margin: 0px;
+  padding: 0px;
+  justify-content:center;  
+  width: 50px;
+  display: inline; 
+  align-self: flex-end;
+  align-self: flex-start;
    }
    /* Page Contact*/
 .contact{
@@ -280,22 +305,23 @@ display: block;
       margin: 0; 
     }
     .footer{
+      padding: 0;
+      margin: 0;
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       right: 0;
       bottom: 0;
       left: 0;
-      padding: 1rem;
-      justify-content: space-around;
+      padding: 1rem;    
       text-align: center; 
       background-color: #718878;    
-     flex-direction: column-reverse;  
-    }
-  
-   .imgsFooter{
-     display: flex;
+    }   
+      .imgsFooter{    
+     
     width: 100px;
-    color: white;
-    
+    color: white;    
    }
    /*About us page*/
    .aboutUs
@@ -305,12 +331,29 @@ display: block;
      text-align: center;
      color: #2D4E43;
    }
-   .socialImgs{     
-     flex-direction: row;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 60px;
+   .soclCont
+   {
+    position: absolute;
+    padding-bottom: 20%;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    left: 0;   
+    text-align: center;      
+   
+    
+   }
+.socialImgs{   
+  margin: 0px;
+  padding: 0px;
+  justify-content:center;  
+  width: 50px;
+  display: inline; 
+  align-self: flex-end;
+  align-self: flex-start;
    }
    /* Page Contact*/
 .contact{
