@@ -1,8 +1,8 @@
 <?php
 try {
 
-    $bdd = new PDO('mysql:host=localhost;dbname=goworking;charset=utf8', 'admin', 'Ucenje2018');
-    echo 'successgit';
+    $bdd = new PDO('mysql:host=localhost;dbname=goworkin;charset=utf8', 'admin', 'passwordMariaDB');
+    // echo 'successgit';
   
 }
 catch(Exception $e) {
