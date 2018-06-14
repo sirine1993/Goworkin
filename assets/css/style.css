@@ -36,7 +36,7 @@ p,h1,h2,h3{
   .headbg{
     padding: auto;
     margin: auto;
-    background-image: url("assets/medias/Image/bgheader.jpg");
+    background-image: url("assets/medias/image/startup-594090_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -161,13 +161,13 @@ display: block;
   .headbg{
     padding: auto;
     margin: auto;
-    background-image: url("assets/medias/Image/bgheader.jpg");
+    background-image: url("assets/medias/image/startup-594090_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 0.5;
     filter: alpha(opacity=50);    
-    height: 500px;    
+    height: 250px;    
   }
 .green1{
   color: #2D4E43;
@@ -290,7 +290,7 @@ display: block;
   .headbg{
     padding: 0;
     margin: 0;
-    background-image: url("assets/medias/Image/bgheader.jpg");
+    background-image: url("assets/medias/image/startup-594090_1920.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
