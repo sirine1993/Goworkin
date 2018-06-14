@@ -212,9 +212,6 @@ display: block;
   padding-right: 5%;
     color: #2D4E43;
    }
-   .aboutUs.p{
-     font-size: 14px;
-   }
    .soclCont
    {
     position: absolute;
@@ -226,7 +223,7 @@ display: block;
     right: 0;
     bottom: 0;
     left: 0;   
-    text-align: center;      
+    text-align: center;   
    
     
    }
