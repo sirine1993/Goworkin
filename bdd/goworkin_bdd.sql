@@ -3,7 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
+<<<<<<< HEAD
 -- Generation Time: Jun 12, 2018 at 03:49 PM
+=======
+-- Generation Time: Jun 12, 2018 at 04:00 PM
+>>>>>>> 24256046dbf1ac1ea15611b5f68244539c05d0bb
 -- Server version: 10.0.34-MariaDB-0ubuntu0.16.04.1
 -- PHP Version: 7.2.5-1+ubuntu16.04.1+deb.sury.org+1
 
