@@ -22,6 +22,9 @@ p,h1,h2,h3{
     margin: 0;   
   
   }
+  .main{
+    padding-top: 20px;
+  }
   .logo{
    padding-top: 10px;
    width: 240px;
@@ -76,24 +79,25 @@ p,h1,h2,h3{
    /*About us page*/
    .aboutUs
    {
-     padding-top: 20px;
-     justify-content: center;
-     text-align: center;
-     color: #2D4E43;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+    color: #2D4E43;
    }
    .soclCont
    {
     position: absolute;
-    padding-bottom: 20%;
-    margin: 0; 
-    display: flex;
+    padding-bottom: 25%;
+    margin: 0;   
     align-items: center;
     justify-content: center;
     right: 0;
     bottom: 0;
     left: 0;   
     text-align: center;      
-   flex-direction: row;
+
     
    }
 .socialImgs{   
@@ -201,23 +205,25 @@ display: block;
    /*About us page*/
    .aboutUs
    {
-     padding-top: 20px;
-     justify-content: center;
-     text-align: center;
-     color: #2D4E43;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+    color: #2D4E43;
    }
    .soclCont
    {
     position: absolute;
     padding-bottom: 20%;
     margin: 0; 
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     right: 0;
     bottom: 0;
     left: 0;   
-    text-align: center;      
+    text-align: center;   
    
     
    }
@@ -225,7 +231,7 @@ display: block;
   margin: 0px;
   padding: 0px;
   justify-content:center;  
-  width: 50px;
+  width: 70px;
   display: inline; 
   align-self: flex-end;
   align-self: flex-start;
@@ -305,6 +311,7 @@ display: block;
       margin: 0; 
     }
     .footer{
+      padding-top:25px;
       padding: 0;
       margin: 0;
       position: absolute;
@@ -326,17 +333,18 @@ display: block;
    /*About us page*/
    .aboutUs
    {
-     padding-top: 20px;
-     justify-content: center;
-     text-align: center;
-     color: #2D4E43;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+    color: #2D4E43;
    }
    .soclCont
    {
     position: absolute;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
     margin: 0; 
-    display: flex;
     align-items: center;
     justify-content: center;
     right: 0;
