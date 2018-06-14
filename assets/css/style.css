@@ -19,8 +19,7 @@ p,h1,h2,h3{
     background-color: #2D4E43;
      text-align: center; 
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
   
   }
   .logo{
@@ -574,7 +573,7 @@ a {
     -webkit-transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.8);
+    -webkit-transform: scale(0.8);z
   }
 }
 @-moz-keyframes cd-bounce {

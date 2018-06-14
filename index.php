@@ -25,6 +25,8 @@ switch ($action){
         require_once('controllers/wifiLib.php');
         break;
 
+    case 'main';
+    require_once('controllers/main.php');
 
     default:
         require_once('controllers/home.php');
