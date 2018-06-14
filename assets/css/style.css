@@ -58,7 +58,7 @@ p,h1,h2,h3{
     .footer{
       padding: 0;
       margin: 0;
-      position: absolute;
+      position: fixed;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -185,7 +185,7 @@ display: block;
     .footer{
       padding: 0;
       margin: 0;
-      position: absolute;
+      position: fixed;
       display: flex;
       align-items: center;
       justify-content: center;
