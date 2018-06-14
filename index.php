@@ -28,10 +28,12 @@ switch ($action){
         break;
 
     case 'main';
-    require_once('controllers/main.php');
+        require_once('controllers/main.php');
+        break;
 
     default:
         require_once('controllers/home.php');
+        break;
     }
 
 ?>
