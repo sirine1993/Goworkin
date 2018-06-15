@@ -10,6 +10,11 @@ p,h1,h2,h3{
   
 
 }
+.main
+{
+  padding: 5% 20px;
+
+}
 /**************** Mobile **********************/
 @media screen and (max-width: 640px) {
   p{
