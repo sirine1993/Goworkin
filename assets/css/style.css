@@ -10,6 +10,11 @@ p,h1,h2,h3{
   
 
 }
+.main
+{
+  padding: 5% 20px;
+
+}
 /**************** Mobile **********************/
 @media screen and (max-width: 640px) {
   p{
@@ -112,7 +117,7 @@ p,h1,h2,h3{
    /* Page Contact*/
 .contact{
   padding-top: 50px;
-  margin-left: auto;
+  margin-left: auto
   margin-right: auto;
   justify-content: center;
 }
@@ -691,7 +696,7 @@ a {
   width: 40px;
   line-height: 40px;
   margin-left: -20px;
-  margin-top: -20px;
+  margin-top: -15px;
   position: absolute;
   text-align: center;
 
@@ -704,15 +709,15 @@ a {
 
 .menu-button {
   position: absolute;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  top: calc(70% - 30px);
+  left: calc(85% - 0px);
   text-decoration: none;
   text-align: center;
   color: #000;
   border-radius: 50%;
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   line-height: 40px;
   padding: 10px;
   background: #718878;
@@ -735,7 +740,7 @@ h1.author a:hover {
   color: #ddd;
 } 
 .icnMenuCrcl{
-width: 70px;
+width: 80px;
 background-color: #718878;
 border-radius: 50%;
 position: absolute;
@@ -746,9 +751,68 @@ text-align: center;
 color: #000;
 border-radius: 50%;
 display: block;
-height: 70px;
+height: 80px;
 line-height: 50px;
-padding: 15px;
+
+padding: 20px; 
 background: #718878;
 
+}
+
+
+/*Switch button for main page*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
