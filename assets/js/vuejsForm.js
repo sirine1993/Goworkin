@@ -8,9 +8,9 @@ new Vue({
   // the instance state
   data: function() {
     return {
-      name: "John Doe",
+      name: "",
       email: {
-        value: "jo@hnd.oe",
+        value: "",
         valid: true
       },
       features: ["Reactivity", "Encapsulation", "Data Binding"],
@@ -20,7 +20,7 @@ new Vue({
         features: []
       },
       message: {
-        text: `Dear Mr. President,\n...`,
+        text: ``,
         maxlength: 255
       },
       submitted: false

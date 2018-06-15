@@ -12,7 +12,9 @@ p,h1,h2,h3{
 }
 /**************** Mobile **********************/
 @media screen and (max-width: 640px) {
-  
+  p{
+    font-size: 15px;
+  }
   .header{     
     width: 100%;
     height: 70px;
@@ -77,17 +79,16 @@ p,h1,h2,h3{
    /*About us page*/
    .aboutUs
    {
-    padding-top: 20px;
+    padding: 5% 20px;
     justify-content: center;
     text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
+ 
     color: #2D4E43;
    }
    .soclCont
    {
     position: absolute;
-    padding-bottom: 25%;
+    padding-bottom: 30%;
     margin: 0;   
     align-items: center;
     justify-content: center;
@@ -102,7 +103,7 @@ p,h1,h2,h3{
   margin: 0px;
   padding: 0px;
   justify-content:center;  
-  width: 50px;
+  width: 40px;
   display: inline; 
   align-self: flex-end;
   align-self: flex-start;
@@ -204,12 +205,11 @@ display: block;
    }
    /*About us page*/
    .aboutUs
-   {
-    padding-top: 20px;
+   {     
+     padding: 5% 20px;
+    
     justify-content: center;
     text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
     color: #2D4E43;
    }
  
@@ -335,11 +335,10 @@ display: block;
    /*About us page*/
    .aboutUs
    {
-    padding-top: 20px;
+    padding: 5% 20px;
     justify-content: center;
     text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
+ 
     color: #2D4E43;
    }
    .soclCont
