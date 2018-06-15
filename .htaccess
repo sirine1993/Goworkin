@@ -5,8 +5,10 @@ Options +FollowSymLinks
 #Activation du mode rewrite d'apache
 
 RewriteEngine On
+
 RewriteCond  %{REQUEST_FILENAME} !-f
 RewriteCond  %{REQUEST_FILENAME} !-d
+
 RewriteRule ^(.*) index.php?action=$1 [L,QSA]
 
 #Rewritecond %{HTTP_HOST} ^goworkin.com$
