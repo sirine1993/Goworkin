@@ -16,6 +16,7 @@ switch ($action){
         break;
 
     case 'coworking':
+    case 'coWorking':
         require_once('controllers/coworking.php');
         break;
 
