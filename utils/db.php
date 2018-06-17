@@ -1,7 +1,7 @@
 <?php
 try {
 
-    $bdd = new PDO('mysql:host=localhost;dbname=goworking;charset=utf8', 'admin', 'Ucenje2018');
+    $bdd = new PDO('mysql:host=localhost;dbname=goworkin_bdd;charset=utf8', 'sirine', 'online@2017');
     // echo 'successgit';
   
 }

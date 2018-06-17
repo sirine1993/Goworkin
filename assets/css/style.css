@@ -739,6 +739,7 @@ h1.author {
 h1.author a:hover {
   color: #ddd;
 } 
+
 .icnMenuCrcl{
 width: 80px;
 background-color: #718878;
@@ -761,6 +762,7 @@ background: #718878;
 
 
 /*Switch button for main page*/
+/*
 .switch {
   position: relative;
   display: inline-block;
@@ -769,6 +771,7 @@ background: #718878;
 }
 
 .switch input {display:none;}
+
 
 .slider {
   position: absolute;
@@ -794,6 +797,7 @@ background: #718878;
   transition: .4s;
 }
 
+
 input:checked + .slider {
   background-color: green;
 }
@@ -809,6 +813,7 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
+/*
 .slider.round {
   border-radius: 34px;
 }
@@ -816,3 +821,4 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+*/
