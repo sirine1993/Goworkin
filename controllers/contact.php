@@ -1,5 +1,5 @@
 <?php
-//echo 'coucou contact'
+echo 'coucou contact';
 
 require_once 'vendor/autoload.php';
 require_once ('models/request.php');
@@ -13,6 +13,7 @@ echo $twig->render('contact.html');
 
 
 
+
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
@@ -20,10 +21,11 @@ set_error_handler("var_dump");
 
 
 
+
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "sebastian.z@codeur.online , acs.goworkin@gmail.com";
+    $email_to = "sebastian.z@codeur.online,acs.goworkin@gmail.com";
     $email_subject = "Message from Goworkin";
 
     function died($error) {
