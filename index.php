@@ -4,8 +4,8 @@ $action = ( isset( $_GET['action']) )? $_GET['action'] : "home";
 
 switch ($action){
 
-    case 'Goworking' :
-    case '/Goworking/' :
+    case 'Goworkin' :
+    case '/Goworkin/' :
         require_once('controllers/home.php');
         break;
 
@@ -31,6 +31,10 @@ switch ($action){
 
     case 'main' :
         require_once('controllers/main.php');
+        break;
+
+    case 'mail' :
+        require_once ('controllers/mail.php');
         break;
 
     default:
