@@ -8,5 +8,5 @@ $loader = new Twig_Loader_Filesystem('views');
 $twig = new Twig_Environment($loader, array('cache' => false));
 
 
-echo $twig->render('aboutUs.html');
+echo $twig->render('about_us.html');
 ?>
