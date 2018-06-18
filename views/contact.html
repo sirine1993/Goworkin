@@ -1,41 +1,8 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> b2d6cbc999118920b316df145ceae1bd30edc1f7
 {% extends "main.html" %} 
 
 {% block content %}
 
-<<<<<<< HEAD
-<!-- on garde les textes sur le côté ou on place tout en placeholder ? -->
-=======
 <div id="app">
-
-  <form method="post" class="vue-form" @submit.prevent="submit">
-
-    <div>
-      <h1 class="center">Contact</h1>
-      <input type="text" name="name" id="name" required="" v-model="name" placeholder="Votre nom">
-    </div>
-    <div>
-
-      <input type="email" name="email" id="email" required="" :class="{ email , error: !email.valid }" v-model="email.value" placeholder="Votre e-mail">
-    </div>
-
-    <div>
-
-      <textarea name="message" class="message" id="textarea" required="" v-model="message.text" :maxlength="message.maxlength"
-        placeholder="Votre message"></textarea>
-    </div>
-
-    <div>
-      <input type="submit" name="submit" value="Envoyer">
-    </div>
->>>>>>> b2d6cbc999118920b316df145ceae1bd30edc1f7
-
-<body>
-
-        {# <div id="app"> #}
     <form name="contactform" class="vue-form" method="post" @submit.prevent="submit" action="contact">
         <table width="450px">
             <tr>
@@ -86,9 +53,7 @@
             </tr>
         </table>
     </form>
+</div>
 
-</body>
-
-</html>
 
 {% endblock %}
