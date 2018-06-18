@@ -24,11 +24,12 @@ switch ($action){
         require_once('controllers/contact.php');
         break;
 
-    case 'wifiLib':
+    case 'wifilib' :
+    case 'wifiLib' :
         require_once('controllers/wifiLib.php');
         break;
 
-    case 'main';
+    case 'main' :
         require_once('controllers/main.php');
         break;
 
