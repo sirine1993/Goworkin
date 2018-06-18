@@ -9,7 +9,7 @@ switch ($action){
         require_once('controllers/home.php');
         break;
 
-    case 'about' :
+    case 'about_us' :
     case 'aboutUs' :
     case 'aboutus' :
         require_once('controllers/about_us.php');
