@@ -1,4 +1,4 @@
-<?php
+ <?php
 //echo 'coucou contact'
 
 require_once 'vendor/autoload.php';
@@ -9,4 +9,4 @@ $twig = new Twig_Environment($loader, array('cache' => false));
 
 
 echo $twig->render('contact.html');
-?>
+
