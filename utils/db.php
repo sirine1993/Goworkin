@@ -1,8 +1,7 @@
 <?php
 try {
     //rajouter ici votre PDO phpmyadmin promo 17
-    // $bdd = new PDO('mysql:localhost;dbname=goworkin;charset=utf8', 'admin', 'passwordMariaDB');
-    $bdd = new PDO('mysql:sebastianz@localhost;dbname=goworkin;charset=utf8', 'sebastianz', 'NM83uHiGZQ');
+    $bdd = new PDO('mysql:localhost;dbname=goworkin;charset=utf8', 'admin', 'passwordMariaDB');
     // echo 'successgit';
   
 }
@@ -13,4 +12,3 @@ catch(Exception $e) {
 // $bdd = new PDO('mysql:localhost;dbname=goworkin;charset=utf8', 'admin', 'passwordMariaDB');
 
 ?>
-
