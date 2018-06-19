@@ -1,5 +1,4 @@
 <?php
-echo 'coucou contact';
 
 require_once 'vendor/autoload.php';
 require_once ('models/request.php');
@@ -9,8 +8,6 @@ $twig = new Twig_Environment($loader, array('cache' => false));
 
 
 echo $twig->render('contact.html');
-
-
 
 
 
@@ -26,6 +23,7 @@ if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "acs.goworkin@gmail.com,sebastian.z@codeur.online";
     $email_subject = "Message from Goworkin";
+
 
     function died($error) {
         // your error code can go here
@@ -46,7 +44,6 @@ if(isset($_POST['email'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
  
-     
  
     $first_name = $_POST['first_name']; // required
     $last_name = $_POST['last_name']; // required
@@ -57,6 +54,8 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
+
+
   if(!preg_match($email_exp,$email_from)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
@@ -95,6 +94,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
  
+    
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n".
@@ -103,11 +103,8 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 
 
-
-
 mail($email_to, $email_subject, $email_message, $headers);
 // echo var_dump($headers);
-
 // echo var_dump(mail());
 
 ?>

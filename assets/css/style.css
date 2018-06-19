@@ -62,7 +62,8 @@ p,h1,h2,h3{
       
       margin: 0; 
     }
-    .footer{     
+    .footer{   
+      height: 10%;  
       margin: 0;
       position: fixed;
       display: flex;
@@ -71,12 +72,12 @@ p,h1,h2,h3{
       right: 0;
       bottom: 0;
       left: 0;
-      padding: 5px;    
+      
       text-align: center; 
       background-color: #718878;    
     }   
-   .imgsFooter{  
-    width: 70px;
+   .imgsFooter{ 
+    padding-bottom: 50%;  
     color: white;    
    }
    /*About us page*/
@@ -90,8 +91,9 @@ p,h1,h2,h3{
    }
    .soclCont
    {
+
+    padding-bottom: 20%;
     position: absolute;
-    padding-bottom: 25%;
     margin: 0;   
     align-items: center;
     justify-content: center;
@@ -187,7 +189,7 @@ display: block;
       margin: 0; 
     }
     .footer{
-      padding: 10px;
+      height: 10%;      
       position: fixed;
       margin-top: 10px;     
       display: flex;
@@ -208,8 +210,7 @@ display: block;
    /*About us page*/
    .main
    {     
-     padding: 5% 20px;
-    
+     padding: 10%;    
     justify-content: center;
     text-align: left;
     color: #2D4E43;
@@ -218,9 +219,8 @@ display: block;
    .soclCont
    {
     position: absolute;
-    padding-bottom: 20%;
-    margin: 0; 
-    
+    padding-bottom: 15%;
+    margin: 0;     
     align-items: center;
     justify-content: center;
     right: 0;
@@ -317,7 +317,7 @@ display: block;
     }
    
       .imgsFooter{    
-     margin: 10px;
+   padding-bottom: 50%;
     width: 50px;
     color: white;    
    }
@@ -332,8 +332,8 @@ display: block;
    }
    .soclCont
    {
+    padding-bottom: 5%;
     position: absolute;
-    padding-bottom: 10%;
     margin: 0; 
     align-items: center;
     justify-content: center;
@@ -345,8 +345,7 @@ display: block;
     
    }
 .socialImgs{   
-  margin: 5px;
-  
+  margin: 5px;  
    justify-content:center;  
   width: 30px;
   display: inline; 
@@ -382,9 +381,8 @@ margin-right: auto;
 }
 
 .footer{
-  padding: 10px;
-  position: fixed;
-  margin-top: 10px;     
+  height: 10%;  
+  position: fixed;   
   display: flex;
   align-items: center;
   justify-content: center;
