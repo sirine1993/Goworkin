@@ -1,5 +1,5 @@
 <?php
-// echo 'coucou main'; 
+echo 'coucou main'; 
 
 require_once 'vendor/autoload.php';
 require_once ('models/request.php');
