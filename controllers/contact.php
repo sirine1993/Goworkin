@@ -21,11 +21,10 @@ set_error_handler("var_dump");
 
 
 
-
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "<acs.goworkin@gmail.com>,<sebastian.z@codeur.online>";
+    $email_to = "acs.goworkin@gmail.com,sebastian.z@codeur.online";
     $email_subject = "Message from Goworkin";
 
     function died($error) {
@@ -98,16 +97,19 @@ if(isset($_POST['email'])) {
  
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion()."\r\n".
-$headers .= "MIME-Version: 1.0\r\n".
-$headers .= "Content-Type: text/html; charset=utf8-8859-1\r\n";
+'Reply-To: '.$email_from."\r\n".
+'MIME-Version: 1.0'."\r\n".
+'Content-Type: text/html; charset=utf8-8859-1'."\r\n".
+'X-Mailer: PHP/' . phpversion();
 
 
-mail($email_to, $email_subject, $email_message, implode("\r\n", $headers));
+
+
+mail($email_to, $email_subject, $email_message, $headers);
 // echo var_dump($headers);
 
 // echo var_dump(mail());
+
 ?>
 
  
@@ -115,7 +117,8 @@ mail($email_to, $email_subject, $email_message, implode("\r\n", $headers));
 Thank you for contacting us. We will be in touch with you very soon.
 
 <?php
- 
+
 }
 
 ?>
+
