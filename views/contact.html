@@ -2,33 +2,58 @@
 
 {% block content %}
 
-<div id="app">
-
-  <form method="post" class="vue-form" @submit.prevent="submit">
-
-    <div>
-      <h1 class="center">Contact</h1>
-      <input type="text" name="name" id="name" required="" v-model="name" placeholder="Votre nom">
-    </div>
-    <div>
-
-      <input type="email" name="email" id="email" required="" :class="{ email , error: !email.valid }" v-model="email.value" placeholder="Votre e-mail">
-    </div>
-
-    <div>
-
-      <textarea name="message" class="message" id="textarea" required="" v-model="message.text" :maxlength="message.maxlength"
-        placeholder="Votre message"></textarea>
-    </div>
-
-    <div>
-      <input type="submit" name="submit" value="Envoyer">
-    </div>
-
-  </form>
-
-
-
+<div class="app main">
+    <form name="contactform" class="vue-form" method="post" @submit.prevent="submit" action="contact">
+        <table>
+            <tr>
+                <td valign="top">
+                    <label required="" v-model="name" placeholder="Your name" for="first_name" ></label>
+                </td>
+                <td valign="top">
+                    <input type="text" name="first_name" maxlength="50" size="30"placeholder="Frist name" >
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="last_name"></label>
+                </td>
+                <td valign="top">
+                    <input type="text" name="last_name" maxlength="50" size="30" placeholder="Last name">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="email"></label>
+                </td>
+                <td valign="top">
+                    <input type="text" required="" :class="{ email , error: !email.valid }" v-model="email.value" placeholder="Your e-mail"
+                        name="email" maxlength="80" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="telephone" ></label>
+                </td>
+                <td valign="top">
+                    <input type="text" name="telephone" maxlength="30" size="30" placeholder="Telephone">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label name="message" class="message" id="textarea" required="" v-model="message.text" :maxlength="message.maxlength" for="comments"></label>
+                </td>
+                <td valign="top">
+                    <textarea name="comments" maxlength="1000" cols="25" rows="6" placeholder="Message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <input type="submit" name="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>
+
 
 {% endblock %}

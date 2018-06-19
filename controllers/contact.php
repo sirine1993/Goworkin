@@ -1,40 +1,17 @@
-<<<<<<< HEAD
- <?php
-//echo 'coucou contact'
-=======
 <?php
-echo 'coucou contact';
->>>>>>> 0fe1d0659ca86cc1a03941d2951c863584b7ee98
-
 require_once 'vendor/autoload.php';
 require_once ('models/request.php');
-
 $loader = new Twig_Loader_Filesystem('views');
 $twig = new Twig_Environment($loader, array('cache' => false));
-
-
 echo $twig->render('contact.html');
-
-<<<<<<< HEAD
-=======
-
-
-
-
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
-
-
-
-
-
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "sebastian.z@codeur.online,acs.goworkin@gmail.com";
     $email_subject = "Message from Goworkin";
-
     function died($error) {
         // your error code can go here
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
@@ -109,7 +86,6 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 // echo var_dump($headers);
-
 // echo var_dump(mail());
 ?>
 
@@ -120,6 +96,4 @@ Thank you for contacting us. We will be in touch with you very soon.
 <?php
  
 }
-
 ?>
->>>>>>> 0fe1d0659ca86cc1a03941d2951c863584b7ee98

@@ -12,9 +12,7 @@ p,h1,h2,h3{
 .main
 {
   padding: 5% 20px;
-  justify-content: center;
-  text-align: left;    
-  color: #2D4E43;
+
 }
 /**************** Mobile **********************/
 @media screen and (max-width: 640px) {
@@ -46,13 +44,10 @@ p,h1,h2,h3{
     margin: auto;  
     background-position: center;
     background-repeat: no-repeat;
-        opacity: 0.5;
+
+    opacity: 0.5;
+    
   }
-  #map{
-    width: 500px;
-    height: 500px;
-    background-color: rgb(226, 11, 11);
-  }  
 .green1{
   color: #2D4E43;
 }
@@ -121,6 +116,9 @@ p,h1,h2,h3{
   padding-top: 50px;
 margin: auto;
   justify-content: center;
+}
+.formcss{
+  width:80%;
 }
 .txtContact{
 width: 60%;
@@ -424,19 +422,19 @@ a {
 }
 
 
-#app {
+.app {
   display: flex;
 }
 
 .vue-form {
   font-size: 16px;
-  width: 500px;
-  padding: 15px 30px;
-  border-radius: 4px;
-  margin: auto auto;
-  width: 500px;
-  background-color: #fff;
-
+    width: 500px;
+    padding: 10%;
+    border-radius: 4px;
+    margin: auto auto;
+    width: 500px;
+    background-color: #fff;
+    justify-content: center;
 }
 .vue-form fieldset {
   margin: 20px 0 0 0;
@@ -664,14 +662,12 @@ a {
 
 .circular-menu {
   width: 250px;
-  height: 250px;
+  height: 150px;
   margin: 0 auto;
   position: relative;
 }
-
 .circle {
   width: 250px;
-  height: 250px;
   opacity: 0;
   
   -webkit-transform: scale(0);
