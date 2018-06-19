@@ -1,6 +1,4 @@
-{% extends "main.html" %}
-
-{% block content %}
+{% extends "main.html" %} {% block content %}
 
 
 <img class="headbg" src="assets/medias/image/bgheader.jpg">
@@ -8,21 +6,28 @@
 
 <nav class="circular-menu">
 
-    <div class="circle">
+  <div class="circle">
+    <a href="contact">
+      <img class="icnMenuCrcl coworking-nav" src="assets/medias/image/contact-icon.png">
+      </label>
+    </a>
 
-      <a href="coworking"><img class="icnMenuCrcl coworking-nav" src="assets/medias/image/computer-screen .png">
-        </label></a>
+    <a href="home">
+      <img class="icnMenuCrcl wifi-nav" src="assets/medias/image/home-icon.png">
+      </label>
+    </a>
 
-      <a><img class="icnMenuCrcl wifi-nav" src="assets/medias/image/wifi-connection-signal-symbol (1).png">
-        </label></a>
-      <a href=""><img class="icnMenuCrcl none-nav" src="assets/medias/image/wheelchair-access.svg">
-        </label></a>
-                                    
-     
-    </div>
-    
-    <a href="" class="menu-button fa fa-bars fa-2x"></a>
-  
-  </nav>
-  
+
+    <a href="about_us">
+      <img class="icnMenuCrcl none-nav" src="assets/medias/image/about_us-icon.png">
+      </label>
+    </a>
+
+
+  </div>
+
+  <a href="" class="menu-button fa fa-bars fa-2x"></a>
+
+</nav>
+
 {% endblock %}
