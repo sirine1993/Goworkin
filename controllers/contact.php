@@ -25,7 +25,7 @@ set_error_handler("var_dump");
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "sebastian.z@codeur.online,acs.goworkin@gmail.com";
+    $email_to = "<acs.goworkin@gmail.com>,<sebastian.z@codeur.online>";
     $email_subject = "Message from Goworkin";
 
     function died($error) {
@@ -99,8 +99,12 @@ if(isset($_POST['email'])) {
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+'X-Mailer: PHP/' . phpversion()."\r\n".
+$headers .= "MIME-Version: 1.0\r\n".
+$headers .= "Content-Type: text/html; charset=utf8-8859-1\r\n";
+
+
+mail($email_to, $email_subject, $email_message, implode("\r\n", $headers));
 // echo var_dump($headers);
 
 // echo var_dump(mail());
