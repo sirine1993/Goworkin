@@ -16,7 +16,7 @@ p,h1,h2,h3{
 
 }
 /**************** Mobile **********************/
-@media screen and (min-width:320px) and (max-width: 640px)
+@media screen and (max-width: 640px) 
 {
   p{
     font-size: 15px;
@@ -67,10 +67,11 @@ p,h1,h2,h3{
 }
 
 .pulldown {
+  width: 100%;
   font-weight: 100;
   height: 40px;
   position: relative;
-  width: 400px;
+
 }
 
 .pulldown-expand {
@@ -154,7 +155,8 @@ p,h1,h2,h3{
 
   }
     body {
-      
+      width: 100%;
+      padding: 0;
       margin: 0; 
     }
     .footer{   
@@ -278,10 +280,11 @@ display: block;
  color: #2D4E43;
 
   }
-    body {
-      
-      margin: 0; 
-    }
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+  }
     .footer{
       height: 10%;      
       position: fixed;
@@ -405,8 +408,9 @@ display: block;
  color: #2D4E43;
 
   }
-    body {
-      
+      body {
+      width: 100%;
+      padding: 0;
       margin: 0; 
     }
    
@@ -795,7 +799,7 @@ a {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    margin-left: 45px;
+   
     margin-top: 70px;
     position: absolute;
     text-align: center;
@@ -811,16 +815,16 @@ a {
 .menu-button {
   position: relative;
   top: calc(100% - 90px);
-  left: calc(120% - 30px);
+  left: calc(100% - 30px);
   text-decoration: none;
   text-align: center;
   border: 4.5px solid #718878;
   color: #718878;
   border-radius: 50%;
   display: block;
-  height: 80px;
-  width: 80px;
-  padding: 20px;
+  height: 30%;
+  width: 30%;
+  padding: 15px;
   background: #fff;
 }
 
@@ -882,91 +886,41 @@ background: #fff;
   top: 23%;
 }
 
-/*pull down */
-/*
-.demo {
-  color:#0f2f24;
-  height: auto;  
-  box-shadow: 3px 0px 20px 3px #C5C5C5;
-}
-
-.pulldown {
-  font-weight: 100;
-  height: 40px;
-  position: relative;
-  width: 500px;
-}
-
-.pulldown-expand {
-  -webkit-appearance: none;
-  padding: 0 0;
-  margin: 0 0;
-  outline: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
 
 
 
-.pulldown-content-wrap {
-  position: absolute;
-  top: 100%;
-  height: initial;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.pulldown-content {
-  margin: 0 0;
-  padding: 0 0;
-  transform: translateY( calc(-100% + 2px) );
-  transition: transform 0.3s ease;
-}
-
-.pulldown-expand:checked + .pulldown-content-wrap .pulldown-content{
-  transform: translateY(0%);
-}
-
-.pulldown-content, .pulldown-content-wrap {
-  width: 100%;
-}
-
-.pulldown-content {
+/*Pull donw*/
+.radio{
+  background-color: #2D4E43;
+  width: 20px;
+  height: 20px;
+ margin: 2px;
+} 
   
-  border-bottom: 2px solid rgba(255,255,255,0.6);
-  background-color: rgba(255,255,255,0.2);
+
+#container{
+  width: 100%;
+background: #718878;;
+padding: 0;
+text-align: center;
+color: #FFF;
+font-size: 1.3em;
+}
+.hidden { display: none; }
+.row {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  background: #718878;
+  padding: .5em 0;
+
 }
 
-.pulldown-label {
-  font-size: 25px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+#your_link_button {
+text-align: center;
+display: block;
+  color: #fff;
+  font-size: 2em;
+  padding-left: 50%;
 }
-
-.pulldown {
-  background-color: rgba(255,255,255,0.3);
-  display: table;
-  position: relative;
-  top: -5%;
-  transform: translateY(-50%);
-  margin: 0px auto;
-}
-
-.pulldown-label, .pulldown li {
-  margin-left: 8px;
-}
-
-.pulldown-content {
-  font-size: 20px;
-}
-
-.pulldown-content li {
-  padding: 5px 0px;
-}
-*/
-/*End*/
