@@ -3,6 +3,51 @@
 
 <img class="headbg" src="assets/medias/image/bgheader.jpg">
 
+<form id="form" method="post" action="">
+
+  <p> Etape 1: Dans quelle ville ? </p>
+  <label for="cityfind">Recherche par Ville</label>
+  <input id="cityfind" type="text"> </br>
+
+  <p id="que"></p>
+  <input type="submit" name="filtered" value="Go">
+  </br>
+
+
+
+  <input id="long" type="hidden" name="long">
+  <input id="lat" type="hidden" name="lat"> </br>
+
+  <p>Etape 2 : Que recherchez-vous ? </p>
+
+  <label for="choix[wifi]">Wifilib</label>
+  <input id="choix[wifi]" name="selection[]" class="selection" type="radio" value="wifilib">
+  </br>
+
+  <label for="choix[cowork]">Cowork</label>
+  <input id="choix[cowork]" name="selection[]" class="selection" type="radio" value="coworking">
+  </br>
+
+  <p id="error"></p>
+
+  <label for="choix[around]">Alentours 25 Km</label>
+  <input id="choix[around]" name="selection[]" class="selection" type="checkbox" value="around">
+  </br>
+
+
+
+  <input type="submit" name="filtered" value="Go">
+
+
+
+</form>
+
+<div id="map"></div>
+
+<input type="button" id="recentrer" name="userpos" value="Recentrer">
+</br>
+
+
 
 <nav class="circular-menu">
 
