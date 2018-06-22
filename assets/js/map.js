@@ -111,7 +111,6 @@ map.on('click', function (e) {
             
         })
         
-
         .then(function(reponse){
           
         if (reponse[0].city_long != null){
