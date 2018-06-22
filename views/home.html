@@ -1,6 +1,7 @@
 {% extends "main.html" %} {% block content %}
 
 
+<<<<<<< HEAD
 <!--<img class="headbg" src="assets/medias/image/bgheader.jpg">-->
 
 <form id="form" method="post" action="">
@@ -45,11 +46,45 @@
 <input type="button" id="recentrer" name="userpos" value="Recentrer">
 </br>
 
+=======
+<img class="headbg" src="assets/medias/image/bgheader.jpg">
+         
+ 
+     
+  <!--Pull donw-->
+ 
+  <div class="row">
+      <div id="container" class="hidden">
+        <div class="content_pull_donw">
+          <input type="text" placeholder="Rechercher votre ville"/>
+          <br/>
+          <div class="content_pull_donw">
+       <label>Wifi libre<input class="radio" value="Wifi libre" type="radio"></label>
+       <label>Coworking<input class="radio"  value="Coworking" type="radio"></label>
+       <label>Alentour 25 km<input  class="radio" value="distance" type="checkbox"></label>
+      </div>
+     
+      </div>
+    </div>
+      <a id="your_link_button" href="#">
+        <i class="icon-button fa fa-angle-double-down "></i> 
+    
+       </a>
+  </div>     
+    
+             
+<!--Maps -->
+  <div class="map">        
+  </div>
+  
+>>>>>>> b9ccf532f1720969fb298d2a63ab01a19db1b15e
+
+  <!--Circular menu -->
+<div class="circle_position">
+<nav class="circular-menu ">
 
 
-<nav class="circular-menu">
-
-  <div class="circle">
+  <div class="circle flex-item-bottom">
     <a href="contact">
       <img class="icnMenuCrcl coworking-nav" src="assets/medias/image/contact-icon.png">
       </label>
@@ -72,5 +107,6 @@
   <a href="" class="menu-button fa fa-bars fa-2x"></a>
 
 </nav>
-
+</div>
+<script type="text/javascript" src="assets/js/vuejsForm.js"></script>
 {% endblock %}

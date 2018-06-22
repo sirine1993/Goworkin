@@ -16,7 +16,8 @@ p,h1,h2,h3{
 
 }
 /**************** Mobile **********************/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) 
+{
   p{
     font-size: 15px;
   }
@@ -49,9 +50,57 @@ p,h1,h2,h3{
     opacity: 0.5;
     
   }
+  .map{
+    margin: 10px;
+    width: 100%;
+    height: 100;
+    background-color:black;
+  }
 .green1{
   color: #2D4E43;
 }
+/*Pull donw*/
+.content_pull_donw{
+  width: 100%;
+  padding-top: 10px;
+}
+.radio{
+  background-color: #2D4E43;
+  width: 20px;
+  height: 20px;
+ margin: 2px;
+} 
+  
+
+#container{
+  width: 100%;
+background: #718878;;
+padding: 0;
+text-align: center;
+color: #FFF;
+font-size: 1.3em;
+}
+.hidden { display: none; }
+.row {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  background: #718878;
+  padding: .5em 0;
+
+}
+
+#your_link_button {
+  margin: auto;
+text-align: center;
+display: block;
+  color: #fff;
+  font-size: 2em;
+  
+}
+
+
   .txtCity{
  margin-top: 200px;
  margin-left: 25%;
@@ -59,10 +108,12 @@ p,h1,h2,h3{
 
   }
     body {
-      
+      width: 100%;
+      padding: 0;
       margin: 0; 
     }
-    .footer{     
+    .footer{   
+      height: 10%;  
       margin: 0;
       position: fixed;
       display: flex;
@@ -70,13 +121,12 @@ p,h1,h2,h3{
       justify-content: center;
       right: 0;
       bottom: 0;
-      left: 0;
-      padding: 5px;    
+      left: 0;      
       text-align: center; 
       background-color: #718878;    
     }   
-   .imgsFooter{  
-    width: 70px;
+   .imgsFooter{ 
+    padding-bottom: 50%;  
     color: white;    
    }
    /*About us page*/
@@ -90,8 +140,9 @@ p,h1,h2,h3{
    }
    .soclCont
    {
+
+    padding-bottom: 20%;
     position: absolute;
-    padding-bottom: 25%;
     margin: 0;   
     align-items: center;
     justify-content: center;
@@ -141,7 +192,7 @@ display: block;
 }
 }
 
-/************* Tablet *******************/
+/********************************************************************** Tablet *****************************************************************/
 @media screen and (min-width: 640px) and (max-width:1024px){
   .header{     
     width: 100%;
@@ -177,26 +228,27 @@ display: block;
   color: #2D4E43;
 }
   .txtCity{
- margin-top: 200px;
- margin-left: 25%;
+ margin-top: 200pxhttp://www.sportsonstreaming.com/
+ margin-left: 25%;http://www.sportsonstreaming.com/
  color: #2D4E43;
 
   }
-    body {
-      
-      margin: 0; 
-    }
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+  }
     .footer{
-      padding: 10px;
+      height: 10%;      
       position: fixed;
       margin-top: 10px;     
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: 0;
-      bottom: 0;
-      left: 0;
-        
+      dihttp://www.sportsonstreaming.com/
+      alhttp://www.sportsonstreaming.com/;
+      juhttp://www.sportsonstreaming.com/nter;
+      rihttp://www.sportsonstreaming.com/
+      bohttp://www.sportsonstreaming.com/
+      lehttp://www.sportsonstreaming.com/
+        http://www.sportsonstreaming.com/
       text-align: center; 
       background-color: #718878;    
     }   
@@ -208,8 +260,7 @@ display: block;
    /*About us page*/
    .main
    {     
-     padding: 5% 20px;
-    
+     padding: 10%;    
     justify-content: center;
     text-align: left;
     color: #2D4E43;
@@ -218,9 +269,8 @@ display: block;
    .soclCont
    {
     position: absolute;
-    padding-bottom: 20%;
-    margin: 0; 
-    
+    padding-bottom: 15%;
+    margin: 0;     
     align-items: center;
     justify-content: center;
     right: 0;
@@ -270,54 +320,100 @@ display: block;
 
 
 
-/****************PC*********************/
+/**************************************PC*********************/
 @media screen and (min-width: 1024px) {
   .header{     
     width: 100%;
-    height: 70px;
+    height:300px;
     background-color: #2D4E43;
      text-align: center; 
     padding: 0;
     margin: 0;  
   }
-  .headbg{
-   
+  .headbg{   
     width: 100%;
-    height: 400px;
+    height: 80%;
     padding: auto;
     margin: auto;  
     background-position: center;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
     opacity: 0.5;
     filter: alpha(opacity=50);    
        
   }
   .logo{
-   padding-top: 10px;
-   width: 240px;
-   height: 60px;
-   justify-content: center;
-   flex-wrap: wrap;
-    
+    padding-top: 10px;
+    width: 800px;
+    height: 250px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
 .green1{
   color: #2D4E43;
 }
+
+/*Pull donw*/
+.content_pull_donw{
+  width: 100%;
+  height: 500px;
+  padding-top: 10px;
+
+}
+.radio{
+  background-color: #2D4E43;
+  width: 70px;
+  height: 70px;
+ margin: 5px;
+} 
+  
+
+#container{
+  width: 100%;
+  height: 500px;
+background: #718878;;
+padding: 0;
+text-align: center;
+color: #FFF;
+font-size: 6.3em;
+
+}
+.hidden { display: none; }
+.row {
+  width: 100%;
+  height: auto;
+  
+  margin: auto;
+  padding: 0;
+  display: flex;  
+  background: #718878;
+  padding: .5em 0;
+
+}
+
+#your_link_button {
+  
+text-align: center;
+display: block;
+  color: black;
+  font-size: 8em;
+  padding-left: 50%;
+}
+
   .txtCity{
  margin-top: 200px;
  margin-left: 25%;
  color: #2D4E43;
 
   }
-    body {
-      
+      body {
+      width: 100%;
+      padding: 0;
       margin: 0; 
     }
    
       .imgsFooter{    
-     margin: 10px;
+   padding-bottom: 50%;
     width: 50px;
     color: white;    
    }
@@ -332,8 +428,8 @@ display: block;
    }
    .soclCont
    {
+    padding-bottom: 5%;
     position: absolute;
-    padding-bottom: 10%;
     margin: 0; 
     align-items: center;
     justify-content: center;
@@ -345,8 +441,7 @@ display: block;
     
    }
 .socialImgs{   
-  margin: 5px;
-  
+  margin: 5px;  
    justify-content:center;  
   width: 30px;
   display: inline; 
@@ -382,19 +477,82 @@ margin-right: auto;
 }
 
 .footer{
-  padding: 10px;
-  position: fixed;
-  margin-top: 10px;     
+  height: 10%;  
+  position: fixed;   
   display: flex;
   align-items: center;
   justify-content: center;
   right: 0;
   bottom: 0;
-  left: 0;
-    
+  left: 0;    
   text-align: center; 
   background-color: #718878;    
 }   
+.imgsFooter{ 
+  padding-bottom: 50%;  
+  width: 120px;
+  color: white;    
+ }
+ /*About us page*/
+ .main
+ {
+  padding: 5% 20px;
+  justify-content: center;
+  text-align: left;
+
+  color: #2D4E43;
+ }
+ .soclCont
+ {
+  padding-bottom: 7%;
+  position: absolute;
+  margin: 0;   
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  left: 0;   
+  text-align: center;      
+
+  
+ }
+.socialImgs{   
+margin: 0px;
+padding: 5px;
+justify-content:center;  
+width:120px;
+display: inline; 
+align-self: flex-end;
+align-self: flex-start;
+ }
+
+ /* Page Contact*/
+.contact{
+padding-top: 50px;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+}
+.txtContact{
+width: 60%;
+height: 50px;
+margin-top: 20px;
+border: 5px solid #718878;
+text-align: center;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.btnEnvoyer{
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: #2D4E43;
+width: 150px;
+height: 30px;
+}
 
 }
 
@@ -430,8 +588,7 @@ a {
   width: 500px;
   padding: 15px 30px;
   border-radius: 4px;
-  margin: auto auto;
-  width: 500px;
+  margin: auto auto;  
   background-color: #fff;
 
 }
@@ -658,19 +815,26 @@ a {
 
 @import "https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
 
+.circle_position{
+  width: auto;
+  height: auto;
+  align-self: flex-end;
+
+}
 
 .circular-menu {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  position: relative;
+  width: 100%;
+  
+   padding: auto;
+  margin: auto;   
+  position: absolute;
+
 }
 
 .circle {
   width: 250px;
   height: 250px;
-  opacity: 0;
-  
+  opacity: 0;  
   
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -683,7 +847,6 @@ a {
 
 .open.circle {
   opacity: 1;
-
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   transform: scale(1);
@@ -691,16 +854,17 @@ a {
 
 .circle a {
   text-decoration: none;
-  color:black;
-  display: block;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  margin-left: -20px;
-  margin-top: -15px;
-  position: absolute;
-  text-align: center;
+    color: black;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-top: 20%;
+    margin-left: 12%;
+    position: absolute;
+    text-align: center;
 }
+
 
 .circle a:hover {
   color: #fff;
@@ -709,18 +873,19 @@ a {
 
 
 .menu-button {
-  position: absolute;
-  top: calc(100% - 90px);
-  left: calc(100% - 30px);
+  position: relative;
+  display: flex;
+  float: right;
+  
+   /*top: calc(100% - 90px);
+  left: calc(100% - 30px); */
   text-decoration: none;
   text-align: center;
   border: 4.5px solid #718878;
   color: #718878;
   border-radius: 50%;
-  display: block;
-  height: 80px;
-  width: 80px;
-  padding: 20px;
+  display: block;  
+  padding: 15px;
   background: #fff;
 }
 
@@ -781,3 +946,7 @@ background: #fff;
   left: 142%;
   top: 23%;
 }
+
+
+
+

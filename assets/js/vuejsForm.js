@@ -64,8 +64,8 @@ var emailRegExp = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]
     }
 
 
-    // Elle vient de quel projet cette fonction ?
-    document.querySelector('.menu-button').onclick = function (e) {
-      e.preventDefault();
-      document.querySelector('.circle').classList.toggle('open');
-    }
+// Elle vient de quel projet cette fonction ?
+document.querySelector('.menu-button').onclick = function(e) {
+   e.preventDefault(); document.querySelector('.circle').classList.toggle('open');
+}
+/*pull  down */

@@ -1,5 +1,8 @@
 <?php
+<<<<<<< HEAD
 //echo 'coucou contact';
+=======
+>>>>>>> b9ccf532f1720969fb298d2a63ab01a19db1b15e
 
 require_once 'vendor/autoload.php';
 require_once ('models/request.php');
@@ -12,8 +15,6 @@ echo $twig->render('contact.html');
 
 
 
-
-
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
@@ -21,12 +22,12 @@ set_error_handler("var_dump");
 
 
 
-
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "sebastian.z@codeur.online,acs.goworkin@gmail.com";
+    $email_to = "acs.goworkin@gmail.com,sebastian.z@codeur.online";
     $email_subject = "Message from Goworkin";
+
 
     function died($error) {
         // your error code can go here
@@ -47,7 +48,6 @@ if(isset($_POST['email'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
  
-     
  
     $first_name = $_POST['first_name']; // required
     $last_name = $_POST['last_name']; // required
@@ -58,6 +58,8 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
+
+
   if(!preg_match($email_exp,$email_from)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
@@ -96,14 +98,19 @@ if(isset($_POST['email'])) {
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
  
+    
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
+'Reply-To: '.$email_from."\r\n".
+'MIME-Version: 1.0'."\r\n".
+'Content-Type: text/html; charset=utf8-8859-1'."\r\n".
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-// echo var_dump($headers);
 
+
+mail($email_to, $email_subject, $email_message, $headers);
+// echo var_dump($headers);
 // echo var_dump(mail());
+
 ?>
 
  
@@ -111,7 +118,8 @@ $headers = 'From: '.$email_from."\r\n".
 Thank you for contacting us. We will be in touch with you very soon.
 
 <?php
- 
+
 }
 
 ?>
+
