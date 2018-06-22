@@ -10,10 +10,6 @@ var geojsonMarkerOptions = {
 };
 // ICONE WIFI POINTS //
 
-
-
-
-
 var points = new L.LayerGroup();
 
 var map = L.map('map',{
@@ -68,19 +64,6 @@ document.getElementById("recentrer").addEventListener("click", function (e){
 
 })
 
-
-
-
-
-
-
-
-   
-
-
-
-
-
 map.on('click', function (e) {
         var container = L.DomUtil.create('div'),
         startBtn = createButton('Start from this location', container),
@@ -96,12 +79,6 @@ map.on('click', function (e) {
         setView: true,
         maxZoom: 15
         });    
-
-
-    
-
-       
-
 
 
         document.querySelector("form").addEventListener("submit", function (e) {
@@ -129,7 +106,7 @@ map.on('click', function (e) {
 
         
 
-        fetch("jsonPoints.php", paramAjax).then(function (response) {
+        fetch("json", paramAjax).then(function (response) {
             return response.json();
             
         })

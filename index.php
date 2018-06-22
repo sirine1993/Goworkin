@@ -37,6 +37,12 @@ switch ($action){
     case 'main' :
         require_once('controllers/main.php');
         break;
+    
+    case 'json' :
+        require_once('models/jsonPoints.php');
+        break;
+
+
 
 
     default:
